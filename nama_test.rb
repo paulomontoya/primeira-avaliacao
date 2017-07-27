@@ -1,21 +1,16 @@
 =begin
 
-  # Registro dos horários:
-
-    Início: 18:08
-    Milestone 1 -> Fazer o código exportar a string correta: 19:17 (1, 2, 3 ,4, Nama..)
-    Fim: 21:18
-
-
   # Lógica:
 
     Números de 1 a 100.
 
-    Para múltiplos de 35, trocar o número por "Nama Team" 
-    Para múltiplos de 7, trocar o número por "Team" 
-    Para múltiplos de 5, trocar o número por "Nama" 
+    Para pares, trocar número por "Go"
+    Para primos, trocar número por "Nama"
+    Para pares e primos, trocar número por "Go Nama"
 
 =end
+  
+  require 'prime'
 
   class NamaTest
 
@@ -28,11 +23,13 @@
 
       @array_of_numbers.each_with_index do |actual_number, key|
 
-        if actual_number % 35 == 0
-          @array_of_numbers[key] = "Nama Team"
-        elsif actual_number % 7 == 0
-          @array_of_numbers[key] = "Team"
-        elsif actual_number % 5 == 0
+        actual_number_is_prime = Prime.prime?(actual_number)
+
+        if actual_number % 2 == 0 && actual_number_is_prime
+          @array_of_numbers[key] = "Go Nama"
+        elsif actual_number % 2 == 0
+          @array_of_numbers[key] = "Go"
+        elsif actual_number_is_prime
           @array_of_numbers[key] = "Nama"
         end
 

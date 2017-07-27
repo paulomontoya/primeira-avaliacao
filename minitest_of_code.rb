@@ -1,4 +1,5 @@
 
+  require 'prime'
   require 'minitest/spec'
   require 'minitest/autorun'
   require './nama_test'
@@ -30,33 +31,33 @@
       end
     end
 
-    describe "array apenas com o 35" do
-      it "deve retonar apenas 'Nama Team'" do
-        @nama_test.array_of_numbers = Array(35)
-        @nama_test.print_final_result.must_equal("Nama Team")
+    describe "array apenas com um número par e primo" do
+      it "deve retonar apenas 'Go Nama'" do
+        @nama_test.array_of_numbers = Array(2)
+        @nama_test.print_final_result.must_equal("Go Nama")
       end
     end
 
-    describe "array apenas com o 7" do
-      it "deve retonar apenas 'Team'" do
-        @nama_test.array_of_numbers = Array(7)
-        @nama_test.print_final_result.must_equal("Team")
+    describe "array apenas com um número par" do
+      it "deve retonar apenas 'Go'" do
+        @nama_test.array_of_numbers = Array(4)
+        @nama_test.print_final_result.must_equal("Go")
       end
     end
 
-    describe "array apenas com o 5" do
+    describe "array apenas com um número primo" do
       it "deve retonar apenas 'Nama'" do
         @nama_test.array_of_numbers = Array(5)
         @nama_test.print_final_result.must_equal("Nama")
       end
     end
 
-    describe "array com números não múltiplos de 5, 7 e 35" do
+    describe "array que não são par ou primo" do
       it "deve retonar o próprio número" do
         array_of_numbers_test = Array(1..100)
         
         array_of_numbers_test.delete_if do |actual_number|
-          if (actual_number % 35 == 0) || (actual_number % 7 == 0) || actual_number % 5 == 0
+          if actual_number % 2 == 0 || Prime.prime?(actual_number)
             true
           end
         end

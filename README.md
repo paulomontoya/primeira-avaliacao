@@ -1,10 +1,10 @@
 # Primeira Avaliação
 
-Imprima na saída padrão (STDOUT) os números de 1 a 100. Em todos os múltiplos de 5, troque o número por Nama. Nos múltiplos de 7 troque o número por Team e nos múltiplos de 35 por Nama Team. 
+Imprima na saída padrão (STDOUT) os números de 1 a 100. Em todos os números pares, troque o número por Go. Nos números primos troque o número por Nama e nos números pares e primos, por Go Nama. 
 
 O formato de impressão dos números precisa ser **EXATAMENTE** igual a esse:
 
-1, 2, 3, 4, Nama, 6, Team, 8, 9, Nama, 11, 12, 13, Team, Nama, 16, 17, 18, 19, Nama, Team, 22, 23, 24, Nama, 26, 27, Team, 29, Nama, 31, 32, 33, 34, Nama Team, 36, 37, 38, 39, Nama, 41, Team, 43, 44, Nama, 46, 47, 48, Team, Nama, 51, 52, 53, 54, Nama, Team, 57, 58, 59, Nama, 61, 62, Team, 64, Nama, 66, 67, 68, 69, Nama Team, 71, 72, 73, 74, Nama, 76, Team, 78, 79, Nama, 81, 82, 83, Team, Nama, 86, 87, 88, 89, Nama, Team, 92, 93, 94, Nama, 96, 97, Team, 99, Nama
+1, Go Nama, Nama, Go, Nama, Go, Nama, Go, 9, Go, Nama, Go, Nama, Go, 15, Go, Nama, Go, Nama, Go, 21, Go, Nama, Go, 25, Go, 27, Go, Nama, Go, Nama, Go, 33, Go, 35, Go, Nama, Go, 39, Go, Nama, Go, Nama, Go, 45, Go, Nama, Go, 49, Go, 51, Go, Nama, Go, 55, Go, 57, Go, Nama, Go, Nama, Go, 63, Go, 65, Go, Nama, Go, 69, Go, Nama, Go, Nama, Go, 75, Go, 77, Go, Nama, Go, 81, Go, Nama, Go, 85, Go, 87, Go, Nama, Go, 91, Go, 93, Go, 95, Go, Nama, Go, 99, Go
 
 Para essa posição é **obrigatório** que: 
 
