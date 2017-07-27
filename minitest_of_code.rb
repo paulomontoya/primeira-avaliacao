@@ -63,7 +63,7 @@
         end
 
         @nama_test.array_of_numbers = array_of_numbers_test
-        @nama_test.print_final_result.wont_match(/(Nama|Team)/)
+        @nama_test.print_final_result.wont_match(/(Nama|Go)/)
       end
     end
 
